@@ -2,7 +2,7 @@ require("dotenv").config;
 
 const express = require("express");
 const Post = require("../models/Posts");
-const { getPost } = require("../middleware/get");
+const { getPost } = require("../middleware/finders");
 const authenticateToken = require("../middleware/auth");
 
 const app = express.Router();
